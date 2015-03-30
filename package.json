@@ -1,0 +1,17 @@
+{
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "gulp": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-newer": "*",
+    "gulp-imagemin": "*",
+    "tiny-lr": "*",
+    "gulp-livereload": "*",
+    "gulp-plumber": "*"
+  }
+}
