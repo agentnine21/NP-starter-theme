@@ -1,8 +1,8 @@
 <?php
 /**
- * The Page template
+ * Front Page template
  *
- * This is the template that displays all pages by default.
+ * This is a custom template with a separate image column.
  *
  * @package A921_Starter_Theme
  */
@@ -28,5 +28,4 @@ get_header(); ?>
 
 </section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
