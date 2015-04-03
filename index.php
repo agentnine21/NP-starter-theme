@@ -18,7 +18,7 @@ get_header(); ?>
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'content', get_post_format() ); ?>
+            <?php get_template_part( 'content' ); ?>
 
         <?php endwhile; ?>
 
@@ -30,7 +30,13 @@ get_header(); ?>
     <?php else : ?>
         <!-- there IS NOT content for this query -->
 
-        <?php get_template_part( 'content', 'none' ); ?>
+        <article id="post-0" class="hentry post no-results not-found">
+            <header class="entry-header">
+                <h1><?php _e( "Oops!", "starter-theme" ); ?></h1>
+            </header><!-- .entry-header -->
+
+            <p><?php _e( "We can&#039;t find content for this page!", "starter-theme" ); ?></p>
+        </article><!-- #post-0 -->
 
     <?php endif; ?>
 
