@@ -34,6 +34,7 @@ if ( ! function_exists( 'starter_theme_setup' ) ) :
         // Enable support for Post Formats.
         add_theme_support( 'post-formats', array( 
             'aside',
+            'gallery',
             'image',
             'video',
             'quote',
