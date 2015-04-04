@@ -23,8 +23,8 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <nav id="nav-below">
-            <div class="nav-previous"><?php next_posts_link( __( "Older posts", "starter-theme" ) ); ?></div>
-            <div class="nav-next"><?php previous_posts_link( __( "Newer posts", "starter-theme" ) ); ?></div>
+            <div class="nav-previous"><?php next_posts_link( __( "Older posts", "a921-starter-theme" ) ); ?></div>
+            <div class="nav-next"><?php previous_posts_link( __( "Newer posts", "a921-starter-theme" ) ); ?></div>
         </nav><!-- #nav-above -->
 
     <?php else : ?>
@@ -32,10 +32,10 @@ get_header(); ?>
 
         <article id="post-0" class="hentry post no-results not-found">
             <header class="entry-header">
-                <h1><?php _e( "Oops!", "starter-theme" ); ?></h1>
+                <h1><?php _e( "Oops!", "a921-starter-theme" ); ?></h1>
             </header><!-- .entry-header -->
 
-            <p><?php _e( "We can&#039;t find content for this page!", "starter-theme" ); ?></p>
+            <p><?php _e( "We can&#039;t find content for this page!", "a921-starter-theme" ); ?></p>
         </article><!-- #post-0 -->
 
     <?php endif; ?>

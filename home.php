@@ -13,14 +13,17 @@ get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
-            </header><!-- .entry-header -->
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		    <header class="entry-header">
+		        <h1 class="entry-title">
+		            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		        </h1>
+		        <span class="entry-date"><?php echo get_the_date(); ?></span>
+		    </header><!-- .entry-header -->
 
             <div class="entry-content">
                 <?php the_content(); ?>
-                <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'themeTextDomain' ) . '</span>', 'after' => '</div>' ) ); ?>
+                <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'a921-starter-theme' ) . '</span>', 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
         </article><!-- #post-<?php the_ID(); ?> -->
 
