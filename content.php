@@ -22,6 +22,8 @@
     <footer class="entry-meta">
 
         <?php the_tags( '<div class="post-tags">' . __( 'Tagged: ', 'a921-starter-theme' ) , ', ', '</div>' ); ?>
+        
+        <?php the_category(' | '); ?>
 
         <div class="comments-link">
             <?php comments_popup_link( 

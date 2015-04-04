@@ -20,7 +20,7 @@ get_header(); ?>
 
             <div class="entry-content">
                 <?php the_content(); ?>
-                <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'themeTextDomain' ) . '</span>', 'after' => '</div>' ) ); ?>
+                <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'a921-starter-theme' ) . '</span>', 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
         </article><!-- #post-<?php the_ID(); ?> -->
 
