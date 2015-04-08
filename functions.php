@@ -61,6 +61,9 @@ if ( ! function_exists( 'starter_theme_setup' ) ) :
 endif; // starter_theme_setup
 add_action( 'after_setup_theme', 'starter_theme_setup' );
 
+// Comments & pingbacks display template
+include('inc/functions/comments.php');
+
 /**
  * Register sidebars and widgetized areas
  */
