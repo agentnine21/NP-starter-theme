@@ -4,7 +4,7 @@
  *
  * Contains the closing of <div id="main"> and all content after.
  *
- * @package Starter_Theme
+ * @package A921_Starter_Theme
  */
 ?>
 

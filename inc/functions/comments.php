@@ -16,7 +16,7 @@ function starter_theme_comment( $comment, $args, $depth ) {
         case 'trackback' :
     ?>
     <li class="post pingback">
-        <p><?php _e( 'Pingback:', 'starter-theme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'A921-starter-theme' ), '<span class="edit-link">', '</span>' ); ?></p>
+        <p><?php _e( 'Pingback:', 'starter-theme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'a921-starter-theme' ), '<span class="edit-link">', '</span>' ); ?></p>
     <?php
             break;
         default :
@@ -36,7 +36,7 @@ function starter_theme_comment( $comment, $args, $depth ) {
                                 esc_url( get_comment_link( $comment->comment_ID ) ),
                                 get_comment_time( 'c' ),
                                 /* translators: 1: date, 2: time */
-                                sprintf( __( '%1$s at %2$s', 'A921-starter-theme' ), get_comment_date(), get_comment_time() )
+                                sprintf( __( '%1$s at %2$s', 'a921-starter-theme' ), get_comment_date(), get_comment_time() )
                             )
                         );
                     ?>
@@ -44,7 +44,7 @@ function starter_theme_comment( $comment, $args, $depth ) {
                 </div><!-- .comment-author .vcard -->
 
                 <?php if ( $comment->comment_approved == '0' ) : ?>
-                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'A921-starter-theme' ); ?></em>
+                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'a921-starter-theme' ); ?></em>
                     <br />
                 <?php endif; ?>
             </header>
@@ -52,7 +52,7 @@ function starter_theme_comment( $comment, $args, $depth ) {
             <div class="comment-content"><?php comment_text(); ?></div>
 
             <div class="reply">
-                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'A921-starter-theme' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'a921-starter-theme' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
             </div><!-- .reply -->
         </article><!-- #comment-## -->
 
