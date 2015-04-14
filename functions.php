@@ -79,6 +79,9 @@ function starter_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'starter_theme_widgets_init' );
 
+// include custom widget file
+include_once( 'inc/widget.php' );
+
 /* ENQUEUE SCRIPTS & STYLES
  ========================== */
 function starter_theme_scripts() {
