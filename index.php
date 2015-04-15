@@ -25,7 +25,8 @@ get_header(); ?>
 		<?php get_template_part( 'inc/pagination' ); ?>
 
     <?php else : ?>
-
+		<!-- there IS NOT content for this query -->
+		
 		<?php get_template_part( 'content', 'none' ); ?>
 
     <?php endif; ?>

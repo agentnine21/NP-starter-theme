@@ -51,11 +51,10 @@ get_header(); ?>
         <?php get_template_part( 'inc/pagination' ); ?>
         
     <?php else : ?>
-
-        <!-- No results found for this archive -->
-			<h1>Nothing Found</h1>
-			<p>Sorry, but there are no posts to display!</p>
-			
+    	<!-- there IS NOT content for this query -->
+    	
+    	<?php get_template_part( 'content', 'none' ); ?>    
+    	
     <?php endif; ?>
    
 
