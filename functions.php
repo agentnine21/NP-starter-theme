@@ -87,6 +87,9 @@ include_once( 'inc/widget.php' );
 function starter_theme_scripts() {
     // theme style.css file
     wp_enqueue_style( 'starter-theme-style', get_stylesheet_uri() );
+    
+    // Google webfonts stylesheet (example for enqueing a google web font)
+    //   wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );
 
     // threaded comments
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
